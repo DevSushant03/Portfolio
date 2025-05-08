@@ -1,4 +1,5 @@
 import React from "react";
+import contactImg from "/src/assets/images/aboutPage.png";
 
 export const Contact = () => {
   const handleFormSubmit = (formData)=>{
@@ -11,7 +12,7 @@ export const Contact = () => {
       <div 
       className="contact-section  centered">
         <div data-aos="fade-up" className="links centered-vertical">
-          <img src="/src/assets/images/aboutPage.png" alt="" />
+          <img src={contactImg} alt="img" />
         </div>
         <div className="form-container">
           <h1 data-aos="fade-up">CONTACT</h1>

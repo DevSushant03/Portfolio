@@ -1,5 +1,5 @@
 import React from "react";
-
+import heroImg from "/src/assets/images/landingPage.png";
 const Home = () => {
   return (
     <section id="home" className="Hero-section centered">
@@ -19,7 +19,7 @@ const Home = () => {
           
         </div>
             <img data-aos="fade-up"
-     data-aos-duration="3000" src="/src/assets/images/landingPage.png" alt="icon" />
+     data-aos-duration="3000" src={heroImg} alt="icon" />
       </div>
     </section>
   );
