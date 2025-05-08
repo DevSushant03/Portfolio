@@ -1,0 +1,60 @@
+[
+    { 
+      "name": "HTML5", 
+      "level": "Advanced", 
+      "image": "/src/assets/images/html.png"
+    },
+    { 
+      "name": "CSS3", 
+      "level": "Advanced", 
+      "image": "/src/assets/images/css.png"
+    },
+    { 
+      "name": "JavaScript", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/javascript.png"
+    },
+    { 
+      "name": "React.js", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/reactjs.png" 
+    },
+    { 
+      "name": "Tailwind", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/tailwind.png"
+    },
+    { 
+      "name": "Bootstrap", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/bootstrap.png"
+    },
+    { 
+      "name": "Python", 
+      "level": "Beginner", 
+      "image": "/src/assets/images/python.png"
+    },
+    { 
+      "name": "Java ", 
+      "level": "Beginner", 
+      "image": "/src/assets/images/java.png" 
+    },
+    
+    { 
+      "name": "Git-GitHub", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/github.png"
+    },
+    { 
+      "name": "VS Code", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/vscode.png"
+    },
+    { 
+      "name": "npm", 
+      "level": "Intermediate", 
+      "image": "/src/assets/images/npm.png" 
+    }
+   
+  ]
+  
