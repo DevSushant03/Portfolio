@@ -1,5 +1,5 @@
 import React from "react";
-import skills from "../API/SkillData.json";
+import skills from "../API/SkillData.js";
 
 const Skills = () => {
   return (

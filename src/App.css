@@ -102,6 +102,14 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .footer h2{
+    font-size: medium;
+  }
+  .footer span p{
+    font-size: small;
+    text-align: center;
+    opacity: 0.5;
+  }
  
 }
 
@@ -492,6 +500,39 @@ background-color: var(--element);
   color: var(--text);
   border-color: #fff;
 }
+
+/* popup */
+/* From Uiverse.io by PriyanshuGupta28 */ 
+.toast {
+  position: fixed;
+  top:100px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--theme);
+  color: var(--text2);
+  font-size: small;
+  font-weight: 600;
+  padding: 0px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  
+}
+.toast button{
+  background-color: rgb(39, 39, 39);
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin: 0px 5px;
+  color: white;
+  &:hover{
+    background-color: red;
+  }
+
+}
+
+
+
 /* Footer css ------------------------------------------------------ */
 .footer{
   padding: 30px 0px;

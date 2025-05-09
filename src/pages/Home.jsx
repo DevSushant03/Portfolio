@@ -14,8 +14,8 @@ const Home = () => {
             I specialize in building responsive, high-performing websites that
             delight users and drive results.
           </p>
-          <button data-aos="fade-up"
-     data-aos-duration="3000" className="shadow__btn">Get in touch</button>
+          <a href="#contact"><button data-aos="fade-up"
+     data-aos-duration="3000" className="shadow__btn">Get in touch</button></a>
           
         </div>
             <img data-aos="fade-up"

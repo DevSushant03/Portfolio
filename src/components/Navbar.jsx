@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 const Navbar = () => {
@@ -7,7 +6,7 @@ const Navbar = () => {
     <>
       <div className="Navbar-section  centered">
         <div data-aos="fade-down" className="navbar">
-          <span>Sushant</span>
+          <span>Sushant.Dev</span>
           <div className="nav-btn centered">
             <a href="#home">Home</a>
             <a href="#about">About</a>
