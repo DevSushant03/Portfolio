@@ -17,26 +17,10 @@ const About = () => {
               collaborations.
             </p>
             <div className="share"></div>
-            <button data-aos="fade-up">Resume</button>
+            <a data-aos="fade-up" href="https://drive.google.com/file/d/1yVzq_oFGg6W2mNPyCpsDobl59XqblY1p/view?usp=drive_link">
+              <button>Resume</button>
+            </a>
           </div>
-        </div>
-        <div className="AboutContent">
-          <h1 data-aos="fade-up">ABOUT ME</h1>
-          <p data-aos="fade-up">
-            Hi! I'm Sushant, a passionate frontend developer pursuing a B.Sc. in
-            Information Technology. I love building websites and apps,
-            constantly improving my skills through real-world projects.
-          </p>
-          <p data-aos="fade-up">
-            I specialize in HTML, CSS, JavaScript, and React.js, creating fast,
-            responsive, and visually appealing websites. I'm a quick learner,
-            always eager to explore new technologies and best practices.
-          </p>
-          <p data-aos="fade-up">
-            My goal is to become a full-stack developer and work on impactful
-            projects. I'm currently open to internships and collaborations to
-            grow professionally.
-          </p>
         </div>
       </div>
     </section>

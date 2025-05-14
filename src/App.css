@@ -8,10 +8,9 @@ html {
 :root {
   --theme: #00ff9d;
   --bg-color: #000000;
-  --element:#0c0c0c;
-  --text:#fbfbfb;
-  --text2:#020d19;
-
+  --element: #0c0c0c;
+  --text: #fbfbfb;
+  --text2: #020d19;
 }
 
 body {
@@ -55,15 +54,14 @@ body {
   .contact-section .links {
     display: none;
   }
-  h1{
+  h1 {
     font-size: 30px;
   }
-  .form-container .form-group input,textarea{
+  .form-container .form-group input,
+  textarea {
     width: 250px;
   }
-  .AboutContent {
-    display: none;
-  }
+  
   .hero-section-container {
     flex-direction: column;
   }
@@ -94,23 +92,21 @@ body {
     color: var(--text);
     text-decoration: none;
   }
-  .About-section .AboutProfile {
-    padding: 0px;
-    display: block;
+  .profilecard {
+  width: 20em;
   }
-  .footer{
+  .footer {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .footer h2{
+  .footer h2 {
     font-size: medium;
   }
-  .footer span p{
+  .footer span p {
     font-size: small;
     text-align: center;
     opacity: 0.5;
   }
- 
 }
 
 /* NAVBAR CSS ------------------------------------------------------------------------ */
@@ -188,7 +184,6 @@ body {
   background: var(--theme);
 }
 
-
 .shadow__btn:hover {
   box-shadow: 0 0 5px rgb(0, 255, 21), 0 0 10px rgb(0, 255, 64),
     0 0 15px rgb(0, 255, 64), 0 0 20px rgb(0, 255, 64);
@@ -208,23 +203,12 @@ body {
   padding: 100px 0px 100px 0px;
 }
 
-.AboutContent {
-  padding: 20px 30px;
-  border-top: 2px solid var(--theme);
-}
-.AboutContent h1{
-  margin: 10px;
-}
 .profilecard {
-  width: 20em;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.AboutProfile{
-  display: none;
-}
-
 
 .profilecard .info {
   font-weight: 400;
@@ -300,12 +284,12 @@ body {
 .skillCard {
   height: 100px;
   width: 110px;
-  padding:0px 3px 15px 3px;
+  padding: 0px 3px 15px 3px;
   margin-bottom: 30px;
   transition: 0.3s;
   border: 1px solid white;
   border-radius: 11px;
-background-color: var(--element);
+  background-color: var(--element);
 
   &:hover {
     transform: translateY(-9px);
@@ -351,13 +335,16 @@ background-color: var(--element);
   align-items: start;
   font-size: small;
   border-radius: 10px;
-  background: radial-gradient(circle at top left , var(--theme) , var(--element) 50%);
-  transition:0.4s;
-  &:hover{
+  background: radial-gradient(
+    circle at top left,
+    var(--theme),
+    var(--element) 50%
+  );
+  transition: 0.4s;
+  &:hover {
     transform: translateY(-15px);
     box-shadow: 0px 0px 10px var(--theme);
   }
-  
 }
 .projectCard .card li {
   background-color: rgb(7, 7, 7);
@@ -376,7 +363,7 @@ background-color: var(--element);
   justify-content: space-between;
 }
 
-.linkBtn a{
+.linkBtn a {
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
@@ -386,7 +373,7 @@ background-color: var(--element);
   border: 1px solid white;
   transition: 0.3s;
 
-  &:hover{
+  &:hover {
     background-color: var(--theme);
     color: var(--text2);
   }
@@ -411,8 +398,6 @@ background-color: var(--element);
   width: 400px;
 }
 /* From Uiverse.io by omriluz */
-
-
 
 .form-container button:active {
   scale: 0.95;
@@ -502,10 +487,10 @@ background-color: var(--element);
 }
 
 /* popup */
-/* From Uiverse.io by PriyanshuGupta28 */ 
+/* From Uiverse.io by PriyanshuGupta28 */
 .toast {
   position: fixed;
-  top:100px;
+  top: 100px;
   left: 20px;
   display: flex;
   align-items: center;
@@ -516,28 +501,23 @@ background-color: var(--element);
   padding: 0px 10px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  
 }
-.toast button{
+.toast button {
   background-color: rgb(39, 39, 39);
   border-radius: 5px;
   padding: 5px;
   border: none;
   margin: 0px 5px;
   color: white;
-  &:hover{
+  &:hover {
     background-color: red;
   }
-
 }
 
-
-
 /* Footer css ------------------------------------------------------ */
-.footer{
+.footer {
   padding: 30px 0px;
   border-top: 2px solid green;
   background-color: rgba(51, 51, 51, 0.171);
   justify-content: space-evenly;
-  
 }

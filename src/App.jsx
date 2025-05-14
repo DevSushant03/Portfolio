@@ -13,7 +13,7 @@ import { useEffect } from "react";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration (in ms)
+      duration: 1500, // Animation duration (in ms)
       once: false, // Only animate once
     });
   }, []);
