@@ -258,6 +258,15 @@ body {
   color: var(--text2);
   cursor: pointer;
 }
+.profilecard .share {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.share a{
+  font-size: 30px;
+}
 
 /* SKILL CSS --------------------------------------------------------*/
 
@@ -313,6 +322,7 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
+
 /* From Uiverse.io by JohnnyCSilva */
 
 /* Project sectionn ------------------------------------------------------------------- */

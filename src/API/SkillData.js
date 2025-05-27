@@ -1,71 +1,61 @@
-import html from "/src/assets/images/html.png";
-import css from "/src/assets/images/css.png";
-import javascript from "/src/assets/images/javascript.png";
-import reactjs from "/src/assets/images/reactjs.png";
-import tailwind from "/src/assets/images/tailwind.png";
-import bootstrap from "/src/assets/images/bootstrap.png";
-import git from "/src/assets/images/github.png";
-import npm from "/src/assets/images/npm.png" ;
-import python from "/src/assets/images/python.png";
-import java from "/src/assets/images/java.png";
-import vscode from "/src/assets/images/vscode.png";
+import html from "/src/assets/icons/html.png";
+import css from "/src/assets/icons/css.png";
+import javascript from "/src/assets/icons/javascript.png";
+import reactjs from "/src/assets/icons/reactjs.png";
+import tailwind from "/src/assets/icons/tailwind.png";
+import git from "/src/assets/icons/github.png";
+import npm from "/src/assets/icons/npm.png" ;
+import python from "/src/assets/icons/python.png";
+import java from "/src/assets/icons/java.png";
+import vscode from "/src/assets/icons/vscode.png";
+import express from "/src/assets/icons/expressjs.png";
+import node from "/src/assets/icons/nodejs.png";
 
 const skillLogo =[
     { 
       "name": "HTML5", 
-      "level": "Advanced", 
+      "level": "95%", 
       "image": html
     },
     { 
       "name": "CSS3", 
-      "level": "Advanced", 
+      "level": "80%", 
       "image": css
     },
     { 
       "name": "JavaScript", 
-      "level": "Intermediate", 
+      "level": "90%", 
       "image": javascript
     },
     { 
       "name": "React.js", 
-      "level": "Intermediate", 
+      "level": "76%", 
       "image":  reactjs
     },
     { 
       "name": "Tailwind", 
-      "level": "Intermediate", 
+      "level": "60%", 
       "image": tailwind
     },
     { 
-      "name": "Bootstrap", 
-      "level": "Intermediate", 
-      "image": bootstrap
+      "name": "Node.js", 
+      "level": "70%", 
+      "image": node
     },
     { 
-      "name": "Python", 
-      "level": "Beginner", 
-      "image": python
+      "name": "Express.js", 
+      "level": "60%", 
+      "image": express
     },
-    { 
-      "name": "Java ", 
-      "level": "Beginner", 
-      "image":  java
-    },
-    
     { 
       "name": "Git-GitHub", 
-      "level": "Intermediate", 
+      "level": "70%", 
       "image": git
     },
     { 
       "name": "VS Code", 
-      "level": "Intermediate", 
+      "level": "80%", 
       "image": vscode
-    },
-    { 
-      "name": "npm", 
-      "level": "Intermediate", 
-      "image": npm
     }
    
   ]

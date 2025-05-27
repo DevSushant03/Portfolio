@@ -1,4 +1,6 @@
 import React from "react";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin ,FaInstagramSquare } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -16,7 +18,12 @@ const About = () => {
               full-stack developer. Currently open to internships and
               collaborations.
             </p>
-            <div className="share"></div>
+            <div data-aos="fade-up" className="share">
+              <span><a href="https://github.com/DevSushant03"><FaSquareGithub /></a></span>
+              <span><a href="https://www.linkedin.com/in/sushant-nachanekar/"><FaLinkedin /></a></span>
+              <span><a href="https://www.instagram.com/mr__sushant__030/?utm_source=qr&r=nametag"><FaInstagramSquare /></a></span>
+
+            </div>
             <a data-aos="fade-up" href="https://drive.google.com/file/d/1yVzq_oFGg6W2mNPyCpsDobl59XqblY1p/view?usp=drive_link">
               <button>Resume</button>
             </a>
