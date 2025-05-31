@@ -13,6 +13,11 @@ html {
   --text2: #020d19;
 }
 
+::selection {
+  background-color: var(--theme); /* highlight background color */
+  color: #000000;            /* highlighted text color */
+}
+
 body {
   margin: 0;
   padding: 0;
