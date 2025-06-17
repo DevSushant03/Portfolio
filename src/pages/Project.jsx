@@ -20,8 +20,8 @@ const Project = () => {
                   })}
                 </span>
                 <span className="linkBtn centered">
-                  <a href={cur.liveDemo}>Preview</a>
-                  <a href={cur.githubRepo}>Code</a>
+                  <a href={cur.liveDemo} target="_blank">Preview</a>
+                  <a href={cur.githubRepo} target="_blank">Code</a>
                 </span>
               </div>
             );

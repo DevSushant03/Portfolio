@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+
 }
 :root {
   --theme: #00ff9d;
@@ -28,6 +29,7 @@ body {
   color: var(--text);
   height: 100%;
   box-sizing: border-box;
+   
 }
 li {
   list-style: none;
