@@ -165,6 +165,7 @@ body {
     rgba(0, 128, 0, 0.5),
     transparent 25%
   );
+  
 }
 .hero-section-container {
   width: 70%;
@@ -305,7 +306,7 @@ body {
   transition: 0.3s;
   border: 1px solid white;
   border-radius: 11px;
-  background-color: var(--element);
+  backdrop-filter: blur(25px);
 
   &:hover {
     transform: translateY(-9px);
@@ -447,7 +448,8 @@ body {
   margin-bottom: 5px;
   color: #fff;
   font-family: inherit;
-  background-color: transparent;
+  background: transparent;
+  backdrop-filter: blur(25px);
   border: 1px solid #414141;
 }
 
@@ -460,6 +462,7 @@ body {
   height: 96px;
   border: 1px solid #414141;
   background-color: transparent;
+  backdrop-filter: blur(25px);
   font-family: inherit;
 }
 
@@ -498,9 +501,10 @@ body {
 }
 
 .form-container .form-submit-btn:hover {
-  background-color: var(--element);
+  background-color: transparent;
   color: var(--text);
   border-color: #fff;
+  backdrop-filter: blur(25px);
 }
 
 /* popup */
@@ -535,6 +539,7 @@ body {
 .footer {
   padding: 30px 0px;
   border-top: 2px solid green;
-  background-color: rgba(51, 51, 51, 0.171);
+  background-color: transparent;
+  backdrop-filter: blur(25px);
   justify-content: space-evenly;
 }

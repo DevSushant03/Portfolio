@@ -1,5 +1,6 @@
 import "./App.css";
 import Footer from "./components/Footer";
+import GlowingCursor from "./components/GlowingCursor";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import { Contact } from "./pages/Contact";
@@ -20,13 +21,14 @@ const App = () => {
 
   return (
     <>
+      <GlowingCursor />
       <Navbar />
       <Home />
       <About />
       <Skills />
       <Project />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 };
