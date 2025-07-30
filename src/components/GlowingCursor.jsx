@@ -1,21 +1,37 @@
 import React, { useState, useEffect } from "react";
+
 const GlowingCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
+    const handleMouseMove = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+      setIsVisible(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsVisible(false);
+    };
+
+    const handleMouseEnter = () => {
+      setIsVisible(true);
+    };
+
+    // Listen on document instead of window
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("mouseenter", handleMouseEnter);
+
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mouseenter", handleMouseEnter);
     };
   }, []);
 
   return (
     <div
-      className="glowSpot"
       style={{
         position: "fixed",
         top: position.y - 10,
@@ -26,10 +42,11 @@ const GlowingCursor = () => {
         backgroundColor: "rgb(0, 255, 64)",
         boxShadow: "0 0 20px 8px rgb(0, 255, 76)",
         pointerEvents: "none",
-        zIndex: 0,
-        transition: "top 0.1s linear, left 0.1s linear",
+        zIndex: 9999,
+        opacity: isVisible ? 1 : 0,
+        transition: "top 0.05s linear, left 0.05s linear, opacity 0.2s",
       }}
-    ></div>
+    />
   );
 };
 
