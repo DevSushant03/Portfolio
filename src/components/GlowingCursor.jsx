@@ -32,6 +32,7 @@ const GlowingCursor = () => {
 
   return (
     <div
+    class="glowSpot"
       style={{
         position: "fixed",
         top: position.y - 10,
@@ -42,9 +43,9 @@ const GlowingCursor = () => {
         backgroundColor: "rgb(0, 255, 64)",
         boxShadow: "0 0 20px 8px rgb(0, 255, 76)",
         pointerEvents: "none",
-        zIndex: 9999,
+        zIndex: -2,
         opacity: isVisible ? 1 : 0,
-        transition: "top 0.05s linear, left 0.05s linear, opacity 0.2s",
+        transition: "top 0.08s linear, left 0.08s linear, opacity 0.2s",
       }}
     />
   );
