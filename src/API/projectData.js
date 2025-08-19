@@ -3,8 +3,6 @@ import atlasImg from "/src/assets/images/atlasProject.png"
 import Quink from "/src/assets/images/urlShortner.png"
 import ViseVerse from "/src/assets/images/viseverse.png"
 
-
-
 const project = [
   {
     "name": "Weather Application",
