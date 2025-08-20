@@ -1,8 +1,7 @@
 import weatherAppImg from "/src/assets/images/weatherApp.png";
 import atlasImg from "/src/assets/images/atlasProject.png"
 import Quink from "/src/assets/images/urlShortner.png"
-import ViseVerse from "/src/assets/images/viseverse.png"
-
+import viseverse from "/src/assets/images/summaryProj.png"
 const project = [
   {
     "name": "Weather Application",
@@ -16,7 +15,7 @@ const project = [
     "name": "ViseVerse",
     "description": "ViseVerse is a smart web app & Chrome extension that extracts text from images using OCR and enhances it with AI and export to PDF/DOCX/TXT.",
     "technologies": ["React.js", "Node.js","tesserect.js"],
-    "image": ViseVerse,
+    "image": viseverse,
     "liveDemo": "https://viseverse.netlify.app/",
     "githubRepo": "https://github.com/DevSushant03/ViseVerse"
   },
