@@ -24,7 +24,7 @@ const About = () => {
               <span><a href="https://www.instagram.com/mr__sushant__030/?utm_source=qr&r=nametag"><FaInstagramSquare /></a></span>
 
             </div>
-            <a data-aos="fade-up" href="https://drive.google.com/file/d/1yVzq_oFGg6W2mNPyCpsDobl59XqblY1p/view?usp=drive_link">
+            <a data-aos="fade-up" target="_blank" href="https://drive.google.com/file/d/1BvbHZuY4T63MU8zqt2Pq8qxiwQtLkLHF/view">
               <button>Resume</button>
             </a>
           </div>
