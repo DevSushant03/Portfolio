@@ -37,12 +37,12 @@ export const Contact = () => {
           <img
             src={contactImg}
             alt="Contact illustration"
-            className="w-64 md:w-80 animate-float"
+            className="w-64 hidden md:w-80 md:block animate-float"
           />
         </div>
 
         {/* Right Side - Compact Contact Form */}
-        <div className="bg-gray-900/60 backdrop-blur-md border border-gray-700 rounded-xl p-6 shadow-lg">
+        <div className="bg-gray-900/60 mx-5 backdrop-blur-md border border-gray-700 rounded-xl p-6 shadow-lg">
           <h1
             data-aos="fade-up"
             className="text-3xl font-bold text-green-400 mb-4"
@@ -58,7 +58,7 @@ export const Contact = () => {
                 name="name_from"
                 id="name"
                 type="text"
-                className="w-full p-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm"
+                className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm"
                 placeholder="Your Name"
               />
             </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
                 name="email_from"
                 id="email"
                 type="email"
-                className="w-full p-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm"
+                className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm"
                 placeholder="Your Email"
               />
             </div>
@@ -82,7 +82,7 @@ export const Contact = () => {
                 id="textarea"
                 name="textarea"
                 rows="4"
-                className="w-full p-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm resize-none"
+                className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-600 focus:border-green-400 outline-none transition-all text-sm resize-none"
                 placeholder="Write your message..."
               />
             </div>
@@ -90,7 +90,7 @@ export const Contact = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-2 rounded-md bg-green-500 text-black text-sm font-semibold hover:bg-green-400 transition-all shadow-md"
+              className="w-full py-2 cursor-pointer rounded-md bg-green-500 text-black text-sm font-semibold hover:bg-green-400 transition-all shadow-md"
             >
               Send Message
             </button>

@@ -33,7 +33,7 @@ const Project = () => {
                 <img
                   src={cur.image}
                   alt={cur.name}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
 

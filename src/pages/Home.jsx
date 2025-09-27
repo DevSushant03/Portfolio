@@ -6,28 +6,22 @@ const Home = () => {
       id="home"
       className="relative bg-[radial-gradient(circle_at_right,rgba(0,128,0,0.5),transparent_25%)] min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden"
     >
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-5xl w-full gap-16 ">
+      <div className="flex flex-col mt-10 md:flex-row items-center justify-between max-w-5xl w-full gap-16 ">
         {/* Left Content */}
         <div className="text-left px-10 space-y-6">
-          <h1
-            
-            className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#00ff9d] to-[#00f0ff] bg-clip-text text-transparent"
-          >
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#00ff9d] to-[#00f0ff] bg-clip-text text-transparent">
             Hi, <br /> I'm Sushant.
           </h1>
 
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1800"
-            className="text-gray-300 max-w-md mx-auto md:mx-0 text-lg"
-          >
-            A Frontend Developer Crafting Exceptional Web Experiences. I build
-            fast, responsive, and modern websites that delight users and drive
-            results.
+          <p className="text-gray-300 max-w-md mx-auto md:mx-0 text-lg">
+            I build modern, dynamic, and interactive web applications that not
+            only look great but also perform flawlessly. With expertise in
+            React.js, Node.js, Express, MongoDB, Tailwind CSS, and GSAP
+            animations, I turn ideas into seamless digital experiences.
           </p>
 
-          <a href="#contact" data-aos="fade-up" data-aos-duration="2000">
-            <button className="px-7 py-3 mt-4 font-semibold rounded-xl bg-[#00ff9d] text-black shadow-[0_0_15px_#00ff9d] hover:shadow-[0_0_25px_#00ff9d,0_0_50px_#00ff9d] transition-all duration-300">
+          <a href="#contact">
+            <button className="px-7 py-3 mt-4 font-semibold border-2 border-white rounded-xl bg-[#00ff9d] cursor-pointer text-black hover:bg-transparent hover:text-white transition-all">
               Get in Touch
             </button>
           </a>

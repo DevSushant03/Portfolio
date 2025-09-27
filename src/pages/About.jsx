@@ -22,15 +22,19 @@ const About = () => {
           {/* Bio */}
           <p className="text-gray-200 max-w-2xl text-base md:text-lg leading-relaxed mb-6">
             Hi! I'm <span className="font-semibold">Sushant</span>, a{" "}
-            <span className="text-[#00ff9d]">frontend developer</span> pursuing
-            a B.Sc. in IT. I specialize in{" "}
+            <span className="text-[#00ff9d]">MERN stack developer</span>{" "}
+            pursuing a B.Sc. in IT. I build fast, responsive, and interactive
+            web applications using{" "}
             <span className="text-[#00ff9d]">
-              HTML, CSS, JavaScript, and React.js
+              React.js, Node.js, Express, MongoDB, Tailwind CSS, and GSAP
             </span>
-            , building fast, responsive, and user-friendly websites. I'm a quick
-            learner passionate about real-world projects and aiming to become a{" "}
-            <span className="text-[#00ff9d]">full-stack developer</span>.
-            Currently open to internships and collaborations.
+            . Passionate about turning ideas into real-world projects, I enjoy
+            creating user-friendly digital experiences and continuously learning
+            new technologies. Currently open to{" "}
+            <span className="text-[#00ff9d]">
+              internships, freelance work, and collaborations
+            </span>
+            .
           </p>
 
           {/* Social Links */}
