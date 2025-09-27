@@ -1,33 +1,76 @@
 import React from "react";
 import { FaSquareGithub } from "react-icons/fa6";
-import { FaLinkedin ,FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="About-section-body centered">
-      <div className="About-section centered">
-        <div className="AboutProfile">
-          <div className="profilecard">
-            <h1 data-aos="fade-up">About Me</h1>
-            <div data-aos="fade-up" className="img"></div>
-            <p data-aos="fade-up" className="info">
-              Hi! I'm Sushant, a frontend developer pursuing a B.Sc. in IT. I
-              specialize in HTML, CSS, JavaScript, and React.js, building fast,
-              responsive, and user-friendly websites. I'm a quick learner
-              passionate about real-world projects, and I'm aiming to become a
-              full-stack developer. Currently open to internships and
-              collaborations.
-            </p>
-            <div data-aos="fade-up" className="share">
-              <span><a href="https://github.com/DevSushant03"><FaSquareGithub /></a></span>
-              <span><a href="https://www.linkedin.com/in/sushant-nachanekar/"><FaLinkedin /></a></span>
-              <span><a href="https://www.instagram.com/mr__sushant__030/?utm_source=qr&r=nametag"><FaInstagramSquare /></a></span>
+    <section
+      id="about"
+      className="w-full bg-[radial-gradient(circle_at_left,rgba(0,128,0,0.5),transparent_25%)] text-white flex justify-center px-6 py-20"
+    >
+      <div className="w-full max-w-5xl text-center">
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-bold text-[#00ff9d] mb-10">
+          About Me
+        </h1>
 
-            </div>
-            <a data-aos="fade-up" target="_blank" href="https://drive.google.com/file/d/1BvbHZuY4T63MU8zqt2Pq8qxiwQtLkLHF/view">
-              <button>Resume</button>
+        {/* Profile Card */}
+        <div className="flex flex-col items-center">
+          {/* Image */}
+          <div className="w-20 h-20 bg-white rounded-xl mb-6"></div>
+
+          {/* Bio */}
+          <p className="text-gray-200 max-w-2xl text-base md:text-lg leading-relaxed mb-6">
+            Hi! I'm <span className="font-semibold">Sushant</span>, a{" "}
+            <span className="text-[#00ff9d]">frontend developer</span> pursuing
+            a B.Sc. in IT. I specialize in{" "}
+            <span className="text-[#00ff9d]">
+              HTML, CSS, JavaScript, and React.js
+            </span>
+            , building fast, responsive, and user-friendly websites. I'm a quick
+            learner passionate about real-world projects and aiming to become a{" "}
+            <span className="text-[#00ff9d]">full-stack developer</span>.
+            Currently open to internships and collaborations.
+          </p>
+
+          {/* Social Links */}
+          <div className="flex gap-6 mb-8 text-2xl">
+            <a
+              target="_blank"
+              href="https://github.com/DevSushant03"
+              className="hover:text-[#00ff9d] transition-colors duration-300"
+            >
+              <i className="text-4xl">
+                <FaSquareGithub />
+              </i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sushant-nachanekar"
+              className="hover:text-[#00ff9d] transition-colors duration-300"
+            >
+              <i className="text-4xl">
+                <FaLinkedin />
+              </i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mr__sushant__030/?utm_source=qr&r=nametag"
+              className="hover:text-[#00ff9d] transition-colors duration-300"
+            >
+              <i className="text-4xl">
+                <FaInstagramSquare />
+              </i>
             </a>
           </div>
+          {/* Resume Button */}
+          <a
+            href="https://drive.google.com/file/d/1BvbHZuY4T63MU8zqt2Pq8qxiwQtLkLHF/view"
+            target="_blank"
+            className="px-6 py-3 rounded-full bg-white text-black font-bold hover:bg-[#00ff9d] hover:text-[#020d19] transition-all duration-300"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </section>

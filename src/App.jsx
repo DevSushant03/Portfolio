@@ -7,18 +7,8 @@ import { Contact } from "./pages/Contact";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Skills from "./pages/Skills";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, // Animation duration (in ms)
-      once: false, // Only animate once
-    });
-  }, []);
-
   return (
     <>
       <GlowingCursor />
