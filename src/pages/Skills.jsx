@@ -3,7 +3,7 @@ import skills from "../API/SkillData.js";
 
 const Skills = () => {
   return (
-    <section className="w-full min-h-screen py-16 px-6 bg-black text-white">
+    <section id="skill" className="w-full min-h-screen py-16 px-6 bg-black text-white">
       <h2 className="text-4xl font-bold text-center mb-12">
         🚀 My <span className="text-green-500">Skills</span>
       </h2>
