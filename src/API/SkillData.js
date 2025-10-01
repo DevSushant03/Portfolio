@@ -29,22 +29,22 @@ const skillLogo =[
     },
     { 
       "name": "React.js", 
-      "level": "76%", 
+      "level": "80%", 
       "image":  reactjs
     },
     { 
       "name": "Tailwind", 
-      "level": "60%", 
+      "level": "70%", 
       "image": tailwind
     },
     { 
       "name": "Node.js", 
-      "level": "70%", 
+      "level": "90%", 
       "image": node
     },
     { 
       "name": "Express.js", 
-      "level": "60%", 
+      "level": "90%", 
       "image": express
     },
     { 

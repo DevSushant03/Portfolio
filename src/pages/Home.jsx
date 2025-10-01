@@ -1,15 +1,72 @@
-import React from "react";
+import React, { useRef } from "react";
 import heroImg from "/src/assets/images/landingPage.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+
 const Home = () => {
+  const containerRef = useRef(null);
+  useGSAP(
+    () => {
+      const textSplit = new SplitText("h1", { type: "chars,words" });
+      // const paragraph = new SplitText("p", { type: "lines" });
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#home",
+            start: "top top",
+            end: "center 10%",
+            scrub: true,
+          },
+        })
+        .to(textSplit.chars, { y: -50, stagger: 0.02, opacity: 0 }, 0);
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#home",
+            start: "center top",
+            end: "bottom 30%",
+            scrub: true,
+          },
+        })
+        .to(
+          "p , a, img",
+          { opacity: 0, stagger: 0.02, ease: "power2.out" },
+          0
+        );
+
+      gsap.from(textSplit.chars, {
+        yPercent: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "expo.out",
+        stagger: 0.05,
+      });
+
+      gsap.from("p ,a,img", {
+        opacity: 0,
+        y: 40,
+        ease: "power2.inOut",
+        duration: 1,
+        stagger: 0.3,
+      });
+    },
+    { scope: containerRef }
+  );
+
   return (
     <section
       id="home"
       className="relative bg-[radial-gradient(circle_at_right,rgba(0,128,0,0.5),transparent_25%)] min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden"
     >
-      <div className="flex flex-col mt-10 md:flex-row items-center justify-between max-w-5xl w-full gap-16 ">
+      <div
+        ref={containerRef}
+        className="flex flex-col mt-10 md:flex-row items-center justify-between max-w-5xl w-full gap-16 "
+      >
         {/* Left Content */}
-        <div className="text-left px-10 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#00ff9d] to-[#00f0ff] bg-clip-text text-transparent">
+        <div className="home-text text-left px-10 space-y-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-green-500">
             Hi, <br /> I'm Sushant.
           </h1>
 
@@ -28,7 +85,7 @@ const Home = () => {
         </div>
 
         {/* Right Image */}
-        <div className="relative group">
+        <div className="home-img relative group">
           <img
             src={heroImg}
             alt="Developer Illustration"

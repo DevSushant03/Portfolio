@@ -25,8 +25,7 @@ const Project = () => {
           {project.map((cur, id) => (
             <div
               key={id}
-              data-aos="zoom-in-up"
-              className="bg-gray-900/50 backdrop-blur-md border border-gray-700 rounded-2xl p-6 flex flex-col hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300"
+              className="bg-gray-900/50 backdrop-blur-md border border-grey-700 rounded-2xl p-6 flex flex-col  hover:border-green-700 transition-all duration-300"
             >
               {/* Image */}
               <div className="overflow-hidden rounded-xl">

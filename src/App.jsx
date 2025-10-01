@@ -7,6 +7,9 @@ import { Contact } from "./pages/Contact";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Skills from "./pages/Skills";
+import gsap from "gsap";
+import { SplitText, ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const App = () => {
   return (
