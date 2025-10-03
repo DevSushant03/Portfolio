@@ -5,6 +5,20 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  cursor: none;
+}
+
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ffcc;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  z-index: 9999;
 }
 :root {
   --theme: #00ff9d;
@@ -19,8 +33,13 @@ html {
   color: #000000; /* highlighted text color */
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .animate-float {
   animation: float 3s ease-in-out infinite;
@@ -29,7 +48,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif ;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   background-color: var(--bg-color);

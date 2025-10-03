@@ -1,6 +1,6 @@
 import "./App.css";
+import CustomCursor from "./components/CustomCursor";
 import Footer from "./components/Footer";
-import GlowingCursor from "./components/GlowingCursor";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import { Contact } from "./pages/Contact";
@@ -14,7 +14,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 const App = () => {
   return (
     <>
-      <GlowingCursor />
+      <CustomCursor />
       <Navbar />
       <Home />
       <About />
