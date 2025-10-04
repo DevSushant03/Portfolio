@@ -1,20 +1,37 @@
-import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
 
+  useGSAP(() => {
+    const t1 = gsap.timeline();
+    t1.from("span", {
+      opacity: 0,
+      y: -30,
+      duration: 1,
+      ease: "expo.out",
+    })
+    t1.from("#navlinks", {
+      width:0,
+      duration: 1,
+    });
+  });
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/50 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <span className="text-xl font-bold text-white tracking-wide">
+        <span id="logo" className="text-xl font-bold text-white tracking-wide">
           Sushant<span className="text-green-500">.Dev</span>
         </span>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex gap-8 text-gray-300">
+        <div
+          id="navlinks"
+          className="hidden md:flex gap-8 text-gray-300 overflow-hidden"
+        >
           <a
             href="#home"
             className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
