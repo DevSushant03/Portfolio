@@ -9,15 +9,17 @@ const Navbar = () => {
 
   useGSAP(() => {
     const t1 = gsap.timeline();
-    t1.from("span", {
+    t1.from("#logo", {
       opacity: 0,
-      y: -30,
+      y:30,
       duration: 1,
       ease: "expo.out",
-    })
-    t1.from("#navlinks", {
-      width:0,
+    });
+    t1.from("#navlinks a", {
+      y: 20,
+      opacity: 0,
       duration: 1,
+      stagger: 0.2,
     });
   });
 
@@ -34,31 +36,31 @@ const Navbar = () => {
         >
           <a
             href="#home"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
+            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
           >
             Home
           </a>
           <a
             href="#about"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
+            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
           >
             About
           </a>
           <a
             href="#skill"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
+            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
           >
             Skills
           </a>
           <a
             href="#project"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
+            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500 transition"
+            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
           >
             Contact
           </a>

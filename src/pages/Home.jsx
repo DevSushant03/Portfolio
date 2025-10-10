@@ -20,21 +20,23 @@ const Home = () => {
             scrub: true,
           },
         })
-        .to(textSplit.chars, { y: -50, stagger: 0.02, opacity: 0 }, 0);
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#home",
-            start: "center top",
-            end: "bottom 30%",
-            scrub: true,
-          },
-        })
+        .to(textSplit.chars, { y: -50, stagger: 0.02, opacity: 0 }, 0)
         .to(
-          "p , a, img",
-          { opacity: 0, stagger: 0.02, ease: "power2.out" },
+          "img",
+          {
+            y: 50,
+          },
           0
         );
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: "#home",
+          start: "center top",
+          end: "bottom 30%",
+          scrub: true,
+        },
+      });
 
       gsap.from(textSplit.chars, {
         yPercent: 100,
@@ -70,7 +72,11 @@ const Home = () => {
             Hi, <br /> I'm Sushant.
           </h1>
 
-          <p className="text-gray-300 max-w-md mx-auto md:mx-0 text-lg">
+          <p
+            className="
+           text-gray-300 max-w-md mx-auto md:mx-0 text-lg
+            "
+          >
             I build modern, dynamic, and interactive web applications that not
             only look great but also perform flawlessly. With expertise in
             React.js, Node.js, Express, MongoDB, Tailwind CSS, and GSAP
@@ -78,7 +84,7 @@ const Home = () => {
           </p>
 
           <a href="#contact">
-            <button className="px-7 py-3 mt-4 font-semibold border-2 border-white rounded-xl bg-[#00ff9d] cursor-pointer text-black hover:bg-transparent hover:text-white transition-all">
+            <button className="px-7 py-3 mt-4 font-semibold border-2 border-white rounded-xl bg-[#00ff9d] text-black hover:bg-transparent hover:text-white transition-all">
               Get in Touch
             </button>
           </a>
@@ -89,7 +95,7 @@ const Home = () => {
           <img
             src={heroImg}
             alt="Developer Illustration"
-            className="relative w-72 animate-float md:w-[400px] lg:w-[500px]"
+            className="relative w-72 md:w-[400px] lg:w-[500px]"
           />
         </div>
       </div>
