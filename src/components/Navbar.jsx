@@ -11,7 +11,7 @@ const Navbar = () => {
     const t1 = gsap.timeline();
     t1.from("#logo", {
       opacity: 0,
-      y:30,
+      y: 30,
       duration: 1,
       ease: "expo.out",
     });
