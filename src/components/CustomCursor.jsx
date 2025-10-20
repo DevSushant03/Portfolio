@@ -16,9 +16,7 @@ const CustomCursor = () => {
 
     const handleHover = (e) => {
       const rect = e.target.getBoundingClientRect();
-      setsize({ width: rect.width, height: rect.height });
-      console.log("Width:", rect.width);
-      console.log("Height:", rect.height);
+      setsize({ width: rect.width + 10, height: rect.height + 10 });
     };
     const handleReset = (e) => {
       setsize({ width: 40, height: 40 });
@@ -49,7 +47,7 @@ const CustomCursor = () => {
             position.y - size.height / 3
           }px)`,
         }}
-        className="hidden md:block fixed top-0 left-0 bg-transparent pointer-events-none transition-transform duration-150 ease-out z-[99]"
+        className="hidden md:block fixed top-0 left-0 bg-transparent pointer-events-none transition-all duration-150 ease-out z-[99]"
       >
         <span className="absolute mb-1 top-0 left-0 w-4 h-4 border-t-3 border-l-3 border-green-500"></span>
         <span className="absolute m-b1 top-0 right-0 w-4 h-4 border-t-3 border-r-3 border-green-500"></span>
