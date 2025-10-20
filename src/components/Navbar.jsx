@@ -36,31 +36,31 @@ const Navbar = () => {
         >
           <a
             href="#home"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
+            className="p-1 px-2 rounded-full "
           >
             Home
           </a>
           <a
             href="#about"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
+            className="p-1 px-2 rounded-full"
           >
             About
           </a>
           <a
             href="#skill"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
+            className="p-1 px-2 rounded-full"
           >
             Skills
           </a>
           <a
             href="#project"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
+            className="p-1 px-2 rounded-full"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="p-1 px-2 rounded-full hover:text-black hover:bg-green-500"
+            className="p-1 px-2 rounded-full"
           >
             Contact
           </a>
