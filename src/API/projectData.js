@@ -3,6 +3,7 @@ import atlasImg from "/src/assets/images/atlasProject.png";
 import Quink from "/src/assets/images/urlShortner.png";
 import viseverse from "/src/assets/images/summaryProj.png";
 import calmnity from "/src/assets/images/clamnity.png";
+import tasktribe from "/src/assets/images/tasktribe.png";
 
 const project = [
   {
@@ -12,7 +13,16 @@ const project = [
     technologies: ["React.js", "Node.js", "tesserect.js"],
     image: viseverse,
     liveDemo: "https://viseverse.netlify.app/",
-    githubRepo: "https://github.com/DevSushant03/ViseVerse",
+    githubRepo: "https://github.com/DevSushant03/",
+  },
+  {
+    name: "TaskTribe",
+    description:
+      "TaskTribe is a collaborative task marketplace where anyone can post tasks, find help, and get work done efficiently",
+    technologies: ["React.js", "Node.js", "MongoDB"],
+    image: tasktribe,
+    liveDemo: "https://tasktribe-plum.vercel.app/",
+    githubRepo: "https://github.com/DevSushant03",
   },
   {
     name: "Calmnity",
