@@ -1,7 +1,7 @@
 import weatherAppImg from "/src/assets/images/weatherApp.png";
 import atlasImg from "/src/assets/images/atlasProject.png";
 import Quink from "/src/assets/images/urlShortner.png";
-import viseverse from "/src/assets/images/summaryProj.png";
+import viseverse from "/src/assets/images/viseverse.png";
 import calmnity from "/src/assets/images/clamnity.png";
 import tasktribe from "/src/assets/images/tasktribe.png";
 
