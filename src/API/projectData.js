@@ -12,7 +12,7 @@ const project = [
       "ViseVerse is a smart web app & Chrome extension that extracts text from images using OCR and enhances it with AI and export to PDF/DOCX/TXT.",
     technologies: ["React.js", "Node.js", "tesserect.js"],
     image: viseverse,
-    liveDemo: "https://viseverse.netlify.app/",
+    liveDemo: "https://viseverse.vercel.app/",
     githubRepo: "https://github.com/DevSushant03/",
   },
   {
