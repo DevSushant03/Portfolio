@@ -2,7 +2,7 @@ import weatherAppImg from "/src/assets/images/weatherApp.png";
 import atlasImg from "/src/assets/images/atlasProject.png";
 import Quink from "/src/assets/images/urlShortner.png";
 import viseverse from "/src/assets/images/viseverse.png";
-import calmnity from "/src/assets/images/clamnity.png";
+import opendotmd from "/src/assets/images/opendotmd.png";
 import tasktribe from "/src/assets/images/tasktribe.png";
 
 const project = [
@@ -10,7 +10,7 @@ const project = [
     name: "ViseVerse",
     description:
       "ViseVerse is a smart web app & Chrome extension that extracts text from images using OCR and enhances it with AI and export to PDF/DOCX/TXT.",
-    technologies: ["React.js", "Node.js", "tesserect.js"],
+    technologies: ["Next.js", "Node.js", "tesserect.js"],
     image: viseverse,
     liveDemo: "https://viseverse.vercel.app/",
     githubRepo: "https://github.com/DevSushant03/",
@@ -25,15 +25,14 @@ const project = [
     githubRepo: "https://github.com/DevSushant03",
   },
   {
-    name: "Calmnity",
+    name: "OpenDotmd",
     description:
-      "Calmnity is a digital platform that promotes mindfulness and mental well-being through mood tracking and personalized calming activities.",
-    technologies: ["React.js", "Node.js", "AI"],
-    image: calmnity,
-    liveDemo: "https://calmnity-dduc.vercel.app/",
+      "Copy beautiful, ready-made README templates for your GitHub profile and repositories. Community contributed and always up-to-date.",
+    technologies: ["Next.js", "Node.js", "MongoDB"],
+    image: opendotmd,
+    liveDemo: "https://opendotmd.vercel.app/",
     githubRepo: "https://github.com/DevSushant03",
   },
-
   {
     name: "Url Shortner",
     description:
