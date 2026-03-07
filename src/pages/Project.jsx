@@ -1,5 +1,5 @@
 import React from "react";
-import project from "/src/API/projectData.js";
+import project from "/src/Constant/projectData.js";
 
 const Project = () => {
   return (

@@ -34,34 +34,17 @@ const Navbar = () => {
           id="navlinks"
           className="hidden md:flex gap-8 text-gray-300 overflow-hidden"
         >
-          <a
-            href="#home"
-            className="p-1 px-2 rounded-full "
-          >
+          <a href="#home" className="p-1 px-2 rounded-full ">
             Home
           </a>
-          <a
-            href="#about"
-            className="p-1 px-2 rounded-full"
-          >
+          <a href="#about" className="p-1 px-2 rounded-full">
             About
           </a>
-          <a
-            href="#skill"
-            className="p-1 px-2 rounded-full"
-          >
-            Skills
-          </a>
-          <a
-            href="#project"
-            className="p-1 px-2 rounded-full"
-          >
+
+          <a href="#project" className="p-1 px-2 rounded-full">
             Projects
           </a>
-          <a
-            href="#contact"
-            className="p-1 px-2 rounded-full"
-          >
+          <a href="#contact" className="p-1 px-2 rounded-full">
             Contact
           </a>
         </div>
@@ -102,13 +85,7 @@ const Navbar = () => {
           >
             About
           </a>
-          <a
-            onClick={() => setActive(false)}
-            href="#skill"
-            className="hover:text-green-500 transition"
-          >
-            Skills
-          </a>
+
           <a
             onClick={() => setActive(false)}
             href="#project"
