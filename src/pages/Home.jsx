@@ -108,9 +108,7 @@ const Home = () => {
           scrub: 1,
         },
       });
-      scrollTl
-        .to(split.chars, { y: -60, opacity: 0, stagger: 0.01 }, 0)
-        .to(illustRef.current, { x: 60, opacity: 0 }, 0);
+      scrollTl.to(split.chars, { y: -60, opacity: 0, stagger: 0.01 }, 0);
     },
     { scope: containerRef },
   );
@@ -262,9 +260,9 @@ const Home = () => {
           </div>
         </div>
         {/* ── RIGHT: illustration ── */}
-        <div>
+        <div className="flex-1 flex justify-center lg:justify-end">
           <img
-          ref={illustRef}
+            ref={illustRef}
             src={developerIllustation}
             alt="Developer Illustration"
             className="w-[320px] md:w-[400px] lg:w-[450px] pointer-events-none select-none"
