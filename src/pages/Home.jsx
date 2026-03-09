@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText, ScrollTrigger } from "gsap/all";
+import developerIllustation from "../assets/images/developer.png";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -74,7 +75,7 @@ const Home = () => {
         .from(subRef.current, { y: 30, opacity: 0, duration: 0.8 }, "-=0.4")
         .from(descRef.current, { y: 30, opacity: 0, duration: 0.8 }, "-=0.5")
         .from(
-          ctaRef.current?.children ? Array.from(ctaRef.current.children) : [],
+          ctaRef.current,
           {
             y: 20,
             opacity: 0,
@@ -213,7 +214,7 @@ const Home = () => {
           </p>
 
           {/* CTA buttons */}
-          <div ref={ctaRef} className="flex flex-wrap gap-4 mt-2">
+          <div ref={ctaRef} className="flex flex-wrap gap-4 mt-2 opacity-100">
             <a
               href="#projects"
               className="group relative px-7 py-3.5 bg-green-500 text-black text-sm font-bold uppercase tracking-widest rounded overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]"
@@ -259,6 +260,15 @@ const Home = () => {
               </span>
             </a>
           </div>
+        </div>
+        {/* ── RIGHT: illustration ── */}
+        <div>
+          <img
+          ref={illustRef}
+            src={developerIllustation}
+            alt="Developer Illustration"
+            className="w-[320px] md:w-[400px] lg:w-[450px] pointer-events-none select-none"
+          />
         </div>
       </div>
 
