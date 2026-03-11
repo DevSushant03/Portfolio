@@ -9,12 +9,18 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 // ── Skills data ──────────────────────────────────────────────────────────────
 const skills = [
-  { name: "React.js", level: 92, color: "#61dafb" },
+  { name: "Javascript", level: 95, color: "#f7e819" },
+  { name: "React.js", level: 90, color: "#0095be" },
   { name: "Node.js", level: 85, color: "#22c55e" },
   { name: "MongoDB", level: 80, color: "#4ade80" },
+  { name: "ReactQuery", level: 80, color: "#de4ac0" },
+  { name: "MySql", level: 60, color: "#267987" },
   { name: "Express", level: 82, color: "#a78bfa" },
-  { name: "Tailwind", level: 95, color: "#38bdf8" },
-  { name: "GSAP", level: 78, color: "#f472b6" },
+  { name: "Tailwind", level: 85, color: "#38bdf8" },
+  { name: "GSAP", level: 70, color: "#f472b6" },
+  { name: "Framer Motion", level: 50, color: "#66027a" },
+  { name: "Python", level: 60, color: "#d9f906" },
+  { name: "Java", level: 50, color: "#3b06f9" },
 ];
 
 // ── Info rows ────────────────────────────────────────────────────────────────

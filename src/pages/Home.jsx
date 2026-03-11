@@ -193,7 +193,7 @@ const Home = () => {
                 "Frontend Developer",
                 "Full Stack Engineer",
                 "React Specialist",
-                "UI Craftsman",
+                "Backend Developer",
               ]}
             />
           </p>
@@ -204,9 +204,11 @@ const Home = () => {
             className="text-sm md:text-base text-gray-500 leading-relaxed max-w-md"
           >
             I build modern, dynamic, and interactive web applications with{" "}
-            <span className="text-green-400">React.js</span>,{" "}
-            <span className="text-blue-400">Node.js</span>,{" "}
-            <span className="text-pink-400">MongoDB</span>, and{" "}
+            <span className="text-blue-400">React.js</span>,{" "}
+            <span className="text-green-400">Node.js</span>,{" "}
+            <span className="text-orange-400">TailwindCss</span>,{" "}
+            <span className="text-green-400">Node.js</span>,{" "}
+            <span className="text-yellow-400">MongoDB</span>, and{" "}
             <span className="text-green-400">GSAP</span> — turning complex ideas
             into seamless digital experiences.
           </p>
@@ -262,6 +264,7 @@ const Home = () => {
         {/* ── RIGHT: illustration ── */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
+            loading="lazy"
             ref={illustRef}
             src={developerIllustation}
             alt="Developer Illustration"
@@ -287,22 +290,22 @@ const Home = () => {
           }}
         >
           {[
+            "Javascript",
             "React.js",
             "Node.js",
             "MongoDB",
             "Tailwind CSS",
             "GSAP",
+            "FramerMotion",
             "TypeScript",
             "Express.js",
-            "PostgreSQL",
-            "React.js",
-            "Node.js",
-            "MongoDB",
-            "Tailwind CSS",
-            "GSAP",
-            "TypeScript",
-            "Express.js",
-            "PostgreSQL",
+            "MySql",
+            "Next.js",
+            "Postman",
+            "ReactQuery",
+            "Git-Github",
+            "Python",
+            "Java",
           ].map((t, i) => (
             <span key={i} className="flex items-center gap-3">
               <span className="text-green-500">▹</span> {t}
