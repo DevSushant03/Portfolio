@@ -420,7 +420,7 @@ const About = () => {
                 </div>
 
                 <a
-                  href="https://drive.google.com/file/d/1ks5K4fjvvdqqJsh7twaQrVyA4hPGOHxc/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Z0twqykGPqvOZ1IhfBR8D-oPiTXdPOUN/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="group relative inline-flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-widest text-black bg-green-400 rounded overflow-hidden transition-all hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]"
