@@ -26,10 +26,10 @@ const skills = [
 // ── Info rows ────────────────────────────────────────────────────────────────
 const info = [
   { key: "name", value: "Sushant Nachanekar" },
-  { key: "role", value: "MERN Stack Developer" },
+  { key: "role", value: "Full Stack Developer" },
   { key: "education", value: "B.Sc. IT (Pursuing)" },
   { key: "status", value: "Open to Work ✦" },
-  { key: "location", value: "India 🇮🇳" },
+  { key: "location", value: "Mumbai ,India 🇮🇳" },
 ];
 
 // ── Skill Bar ─────────────────────────────────────────────────────────────────

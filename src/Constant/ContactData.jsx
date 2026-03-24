@@ -41,7 +41,7 @@ export const contactInfo = [
       </svg>
     ),
     label: "Location",
-    value: "India 🇮🇳",
+    value: "Mumbai , India 🇮🇳",
     href: null,
   },
   {

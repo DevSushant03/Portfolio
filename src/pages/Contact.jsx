@@ -233,7 +233,7 @@ export const Contact = () => {
               <p className="text-sm text-gray-400">
                 Currently{" "}
                 <span className="text-green-400 font-semibold">
-                  open to internships
+                  open to work
                 </span>
                 , freelance work &amp; collaborations.
               </p>
