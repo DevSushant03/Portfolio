@@ -4,6 +4,7 @@ import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
+import GithubCalendarSection from "../components/GithubCalendarSection";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -541,6 +542,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <GithubCalendarSection />
       </div>
     </section>
   );
