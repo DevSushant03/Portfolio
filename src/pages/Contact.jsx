@@ -16,6 +16,7 @@ const Field = ({
   textarea,
   required,
 }) => {
+  const message = "Hi Sushant, I saw your portfolio.";
   const [focused, setFocused] = useState(false);
   const base = `w-full bg-white/[0.03] border rounded px-4 font-mono text-sm text-gray-200 placeholder-gray-700 outline-none transition-all duration-300 ${
     focused
@@ -33,6 +34,7 @@ const Field = ({
         <textarea
           name={name}
           rows={4}
+          value={message}
           placeholder={placeholder}
           required={required}
           onFocus={() => setFocused(true)}
