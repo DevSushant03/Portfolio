@@ -9,8 +9,8 @@ const project = [
   {
     name: "ViseVerse",
     description:
-      "ViseVerse is a smart web app & Chrome extension that extracts text from images using OCR and enhances it with AI and export to PDF/DOCX/TXT.",
-    technologies: ["Next.js", "Node.js", "tesserect.js"],
+      "ViseVerse is an AI-powered web platform that extracts text from images and documents and provides features like summarization, translation, grammar correction, and content polishing for faster and smarter text processing.",
+    technologies: ["Next.js", "Node.js", "tesserect.js", "AI"],
     image: viseverse,
     liveDemo: "https://viseverse.vercel.app/",
     githubRepo: "https://github.com/DevSushant03/",

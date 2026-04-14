@@ -12,7 +12,6 @@ import { SplitText, ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 import Lenis from "lenis";
-import GithubCalendarSection from "./components/GithubCalendarSection";
 
 const App = () => {
    useEffect(() => {
