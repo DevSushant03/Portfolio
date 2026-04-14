@@ -18,7 +18,7 @@ const project = [
   {
     name: "TaskTribe",
     description:
-      "TaskTribe is a collaborative task marketplace where anyone can post tasks, find help, and get work done efficiently",
+      "TaskTribe is a collaborative platform where students can post tasks, find help, and get work done efficiently",
     technologies: ["React.js", "Node.js", "MongoDB"],
     image: tasktribe,
     liveDemo: "https://tasktribe-plum.vercel.app/",
